@@ -1,0 +1,90 @@
+name: Android Release Dev
+
+# 1
+on:  
+  push:
+    tags:
+      - '*'
+  # 3
+  workflow_dispatch:
+
+# 4
+jobs:
+  # 5
+  build:
+    # 6
+    runs-on: ubuntu-latest
+
+    # 7
+    steps:
+      # 8
+      - uses: actions/checkout@v3
+      # 9
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: "12.x"
+      # 10   
+      - uses: subosito/flutter-action@v2
+        with:
+          # 11
+          flutter-version: "3.3.9"
+          channel: 'stable'
+      # 12
+      - name: Get dependencies
+        run: flutter pub get
+        
+      - name: Restore grouu.keystore
+        run: echo ${{ secrets.ANDROID_KEYSTORE_BASE64 }} | base64 -d > android/grouu.keystore
+        
+      - name: Restore key.properties
+        run: echo ${{ secrets.ANDROID_KEY_PROPERTIES }} | base64 -d > android/key.properties
+        
+      - name: tree
+        run: tree -L 2
+        
+      # Runs a set of commands using the runners shell
+      - name: Start release build
+        run: flutter build apk --flavor dev --release -t lib/main_qa.dart --obfuscate --split-debug-info=obfuscate
+
+      - name: Create a Release APK
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "build/app/outputs/apk/dev/release/*.apk"
+          token: ${{ secrets.GROUU_SECRET }}
+          
+      - name: collect apk artifacts
+        uses: actions/upload-artifact@v2
+        with:
+         name: release-apk
+         # Path to the release files
+         path: build/app/outputs/apk/dev/release/*.apk
+         
+ # Release job, upload the ipa to Firebase App Distribution
+  release:
+    name: Release apk to Firebase
+    needs: [ build ]
+    runs-on: ubuntu-latest
+    steps:
+    
+    # Retrieve ipa file from GitHub artifacts
+    - uses: actions/checkout@v2
+    - name: Get release-apk from artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: release-apk
+        
+    - name: Get apk name
+      id: apk-name
+      run: |
+        APK_NAME=$(echo *.apk)
+        echo "::set-output name=APK_NAME::${APK_NAME}"
+
+    # Upload ipa file to Fiebase
+    - name: Upload artifact to Firebase App Distribution
+      uses: wzieba/Firebase-Distribution-Github-Action@v1
+      with:
+        appId: ${{secrets.FIREBASE_ANDROID_APPID_DEV}}
+        token: ${{secrets.FIREBASE_TOKEN}}
+        file: ${{ steps.apk-name.outputs.APK_NAME }}
+        groups: android-dev-tester

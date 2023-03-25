@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "343010913477",
+    "project_id": "grouu-mobile",
+    "storage_bucket": "grouu-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343010913477:android:ffff5a6e31026e0ed194ac",
+        "android_client_info": {
+          "package_name": "id.grouu.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343010913477-hu93pj4sr041afh4n7lnbc8fdb0eqsas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAHyvmtGBUnAn2Zhm-S532ogf6v3shvI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343010913477-hu93pj4sr041afh4n7lnbc8fdb0eqsas.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "343010913477-6ad312icuhlm431piacstqa7bi5gnlne.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "id.grouu.mobile"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343010913477:android:4c07fbb5e17c5c71d194ac",
+        "android_client_info": {
+          "package_name": "id.grouu.mobile.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343010913477-hu93pj4sr041afh4n7lnbc8fdb0eqsas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAHyvmtGBUnAn2Zhm-S532ogf6v3shvI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343010913477-hu93pj4sr041afh4n7lnbc8fdb0eqsas.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "343010913477-6ad312icuhlm431piacstqa7bi5gnlne.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "id.grouu.mobile"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

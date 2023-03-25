@@ -1,0 +1,110 @@
+{
+  "login_start": "Below are list of strings for login",
+  "login_welcome": "Welcome!",
+  "login_welcome_subtitle": "Halo Mam Pap, dapatkan berbagai manfaat dan keuntungan untuk buah hati dengan Grouu App.",
+  "login_et_user_email": "Email Address",
+  "login_et_user_password": "Password",
+  "login_et_confirm_user_password": "Confirmation Password",
+  "register_signup_title": "Yuk, bergabung dengan Grouu App dan jadilah super parents untuk Si Kecil!",
+  "register_skip": "Lewati",
+  "register_social_wording": "atau daftar dengan",
+  "register_asking_account": "Sudah punya akun?",
+  "login_btn_forgot_password": "Forgot Password?",
+  "login_btn_sign_in": "Sign In",
+  "login_sign_up": "Sign Up",
+  "login_error_fill_fields": "Please fill in all fields",
+  "login_button": "Login",
+  "login_end": "------------------------------------------------------------------------------------",
+
+  "forget_password_title": "Lupa Kata Sandi?",
+  "forget_password_subtitle": "Masukkan email yang terdaftar untuk ubah kata sandi",
+  "create_password_title": "Atur Kata Sandi Baru",
+  "create_password_subtitle":"Masukkan kata sandi baru dan lakukan konfirmasi ulang. Pastikan kata sandi terdiri dari kombinasi angka, huruf kecil, huruf kapital, dan simbol.",
+  "create_password_error_verification": "Verifikasi gagal!",
+  "create_password_error_verification_desc": "Pastikan kata sandi dan konfirmasi kata sandi sudah sesuai.",
+  "create_password_error_same_pass": "Pastikan kata sandi berbeda dari sebelumnya.",
+
+  "showcase_title_growth": "Pantau pertumbuhan Si Kecil seperti tinggi badan, berat badan, dan lingkar kepala menurut grafik WHO.",
+  "showcase_title_vaccine": "Lihat jadwal dan jenis vaksin yang dibutuhkan Si Kecil sesuai rekomendasi IDAI.",
+  "showcase_title_milestone": "Monitor perkembangan Si Kecil dari berbagai aspek dan dapatkan ide stimulasi yang mendukung.",
+  "showcase_title_shop": "Lengkapi kebutuhan Si kecil dan keluarga dengan belanja berbagai produk pilihan yang disediakan Grouu.",
+  "showcase_title_article": "Tetap up to date dengan inspirasi seputar MPASI dan parenting yang akurat serta terpercaya.",
+  
+  "home_start": "Below are list of strings for home",
+  "home_tv_posts": "Posts",
+  "home_tv_error": "Error",
+  "home_tv_no_post_found": "No posts found",
+  "home_tv_choose_language": "Choose Language",
+  "home_end": "-------------------------------------------------------------------------------------",
+
+  "growth": "Pertumbuhan",
+  "growth_header": "Pantau Pertumbuhan",
+  "growth_subheader": "Periksa apakah pertumbuhan Tinggi Badan (TB), Berat Badan (BB) dan Lingkar Kepala Si Kecil normal sesuai dengan grafik pertumbuhan dari WHO.",
+  "growth_tb_highrisk_below": "Tinggi badan Si Kecil tergolong sangat pendek untuk usianya. Segera periksakan Si Kecil ke layanan kesehatan untuk penanganan lebih lanjut.",
+  "growth_tb_lowrisk_below": "Si Kecil tergolong pendek untuk usianya. Segera periksakan Si Kecil ke dokter untuk penanganan lebih lanjut.",
+  "growth_tb_normal": "Tinggi badan Si Kecil sudah sesuai dengan usianya. Pantau ulang secara berkala ya, {}",
+  "growth_tb_lowrisk_above": "Si Kecil tergolong tinggi untuk anak seusianya. Segera periksakan ke layanan kesehatan untuk pemeriksaan lebih lanjut.",
+  "growth_tb_highrisk_above": "Si Kecil tergolong sangat tinggi untuk anak seusianya. Segera periksakan ke layanan kesehatan untuk penanganan lebih lanjut.",
+  
+  "growth_bb_highrisk_below": "Berat badan Si Kecil tergolong sangat kurang atau terlalu kurus. Segera bawa Si Kecil ke layanan kesehatan untuk pemeriksaan lebih lanjut.",
+  "growth_bb_lowrisk_below": "Berat badan Si Kecil tergolong kurang atau kurus. Segera periksakan Si Kecil ke dokter untuk penanganan lebih lanjut.",
+  "growth_bb_normal": "Berat badan Si Kecil normal dan sesuai dengan usianya. Selalu pantau berat badan Si Kecil secara berkala ya, {}",
+  "growth_bb_lowrisk_above": "Si Kecil berisiko berat badan lebih. Segera bawa Si Kecil ke layanan kesehatan untuk pemeriksaan dan penanganan lebih lanjut.",
+  "growth_bb_highrisk_above": "Si Kecil kelebihan berat badan! Segera bawa ke layanan kesehatan untuk pemeriksaan lebih lanjut.",
+
+  "growth_lk_highrisk_below": "Ukuran kepala anak sangat kecil (Mikrosefali). Segera periksakan anak ke layanan kesehatan untuk pemeriksaan lebih lanjut.",
+  "growth_lk_lowrisk_below": "Ukuran kepala anak tergolong kecil (Mikorsefali) untuk usianya. Segera periksakan Si Kecil ke layanan kesehatan untuk pemeriksaan lebih lanjut.",
+  "growth_lk_normal": "Lingkar kepala Si Kecil normal sesuai dengan umurnya. Pantau ulang secara rutin ya, {}",
+  "growth_lk_lowrisk_above": "Ukuran kepala Si Kecil tergolong besar (Makrosefali).  Segera periksakan ke layanan kesehatan untuk pemeriksaan lebih lanjut.",
+  "growth_lk_highrisk_above": "Ukuran kepala anak sangat besar (Makrosefali). Segera periksakan ke layanan kesehatan untuk pemeriksaan lebih lanjut.",
+
+  "growth_bmi_highrisk_below": "Gizi Si Kecil sangat buruk! Segera periksakan Si Kecil ke dokter atau layanan kesehatan untuk pemeriksaan lebih lanjut.",
+  "growth_bmi_lowrisk_below": "Gizi Si Kecil tergolong buruk. Segera periksakan Si Kecil ke layanan kesehatan untuk pemeriksaan lebih lanjut.",
+  "growth_bmi_normal": "Gizi Si Kecil tergolong baik. Pantau ulang tinggi dan berat badannya secara rutin ya, {}",
+  "growth_bmi_lowrisk_above": "Si Kecil beresiko gizi lebih atau obesitas. Jadwalkan konsultasi dengan dokter anak untuk pemeriksaan dan penanganan lebih lanjut.",
+  "growth_bmi_highrisk_above": "Si Kecil tergolong obesitas! Segera periksakan ke dokter atau layanan kesehatan untuk penanganan lebih lanjut.",
+
+  "profile_unregistered_child_title": "Profil Si Kecil belum dibuat.",
+  "profile_unregistered_child_subtitle": "Yuk, simpan data Si Kecil dan pantau tumbuh kembangnya kemudian!",
+
+  "help_and_support": "Help & Support",
+  "help_and_support_subtitle": "Jika anda membutuhkan bantuan silahkan hubungi kami di sini",
+  "help_and_support_cs":"Customer Service",
+  "help_and_support_email":"Email Us",
+
+  "delete_account_subtitle": "Grouu turut sedih mendengar {greeting} ingin menghapus akun. Apabila {greeting} sudah yakin ingin menghapus akun, boleh kami tahu alasannya?",
+  "delete_account_option_rarely": "{} jarang menggunakan akun",
+  "delete_account_option_satisfied": "Tidak puas dengan fitur yang disediakan",
+  "delete_account_option_account": "{} memiliki dua akun",
+  "delete_account_option_others": "Lainnya....",
+
+  "vaccine": "Vaksin",
+  "vaccine_header": "Pantau Jadwal Vaksin",
+  "vaccine_subheader": "Lihat jadwal dan jenis vaksin yang dibutuhkan Si Kecil sesuai rekomendasi IDAI. Setiap jenis vaksin dilengkapi informasi menyeluruh mulai dari manfaat, Kejadian Ikutan Pasca Imunisasi (KIPI), sampai cara mengatasinya.",
+
+  "milestone": "Perkembangan",
+  "milestone_header": "Monitor Perkembangan",
+  "milestone_subheader": "Monitor dan dukung perkembangan Si Kecil dalam berbagai aspek lewat ide stimulasi sederhana yang dikemas secara menarik dan mudah untuk diikuti.",
+
+  "shop": "Belanja",
+
+  "article": "Artikel",
+
+  "dialog_success": "Sukses!",
+  "dialog_success_preference": "Preferensi {} telah berhasil diperbaharui",
+  "dialog_success_profile": "Profile {} telah berhasil diperbaharui",
+
+  "progression_unverified_title": "Segera Lakukan Verifikasi",
+  "progression_unverified_subtitle": "Supaya {} bisa mengakses seluruh fitur Grouu App mobile",
+  "progression_uncompleted_parent_title": "Lengkapi Data Diri",
+  "progression_uncompleted_parent_subtitle": "Supaya {} bisa menggunakan seluruh fitur Grouu",
+  "progression_uncompleted_child_title": "Lengkapi Data Anak",
+  "progression_uncompleted_child_subtitle": "Supaya {} bisa memantau perkembangan Si Kecil dengan lebih maksimal",
+  "progression_uncompleted_growth_title": "Lengkapi Data Pertumbuhan Anak",
+  "progression_uncompleted_growth_subtitle": "Supaya {} bisa memantau pertumbuhan Si Kecil lebih optimal.",
+  "progression_uncompleted_preferences_title": "Lengkapi Data Preferensi",
+  "progression_uncompleted_preferences_subtitle": "Selanjutnya silahkan lengkapi data preferensi {}"
+
+
+
+}

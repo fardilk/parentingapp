@@ -1,0 +1,120 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Android : Build Grouu App",
+			"type": "shell",
+			"command": "flutter",
+			"args": [
+				"build",
+				"${input:buildType}",
+				"--flavor",
+				"${input:buildFlavor}",
+				"--release",
+				"-t",
+				"lib/main_${input:buildEnv}.dart",
+				"--obfuscate",
+				"--split-debug-info=obfuscate"
+			],
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "iOS : Build Grouu App",
+			"type": "shell",
+			"command": "flutter",
+			"args": [
+				"build",
+				"ios",
+				"--flavor",
+				"${input:iosBuildFlavor}",
+				"--release",
+				"-t",
+				"lib/main_${input:buildEnv}.dart",
+				"--export-options-plist=ios/ExportOptions-${input:iosBuildFlavor}.plist"
+			],
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Android : Build Grouu App Using FVM",
+			"type": "shell",
+			"command": "fvm",
+			"args": [
+				"flutter",
+				"build",
+				"${input:buildType}",
+				"--flavor",
+				"${input:buildFlavor}",
+				"--release",
+				"-t",
+				"lib/main_${input:buildEnv}.dart",
+				"--obfuscate",
+				"--split-debug-info=obfuscate"
+			],
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "iOS : Build Grouu App Using FVM",
+			"type": "shell",
+			"command": "fvm",
+			"args": [
+				"flutter",
+				"build",
+				"ipa",
+				"--flavor",
+				"${input:iosBuildFlavor}",
+				"--release",
+				"-t",
+				"lib/main_${input:buildEnv}.dart",
+				"--export-options-plist=ios/ExportOptions-${input:iosBuildFlavor}.plist"
+			],
+			"problemMatcher": [],
+			"group": "build"
+		},
+	],
+	"inputs": [
+		{
+			"type": "pickString",
+			"id": "buildType",
+			"description": "What type of build do you want to create?",
+			"options": [
+				"apk",
+				"appbundle"
+			],
+			"default": "apk"
+		},
+		{
+			"type": "pickString",
+			"id": "buildFlavor",
+			"description": "What type of flavor do you want to choose?",
+			"options": [
+				"dev",
+				"prod"
+			],
+			"default": "dev"
+		},
+		{
+			"type": "pickString",
+			"id": "buildEnv",
+			"description": "What env do you want to choose?",
+			"options": [
+				"dev",
+				"qa",
+				"prod"
+			],
+			"default": "dev"
+		},
+		{
+			"type": "pickString",
+			"id": "iosBuildFlavor",
+			"description": "What type of flavor do you want to choose?",
+			"options": [
+				"dev",
+				"prod"
+			],
+			"default": "prod"
+		}
+	]
+}
